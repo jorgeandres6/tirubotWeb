@@ -113,6 +113,7 @@ const copy = {
       "Acuerdo marco tripartito con la Secretaria de Ambiente del DMQ y la Empresa Publica Metropolitana de Transporte de Pasajeros de Quito.",
       "Implementacion de equipos Tritubot en estaciones de alto flujo para impulsar recuperacion y reciclaje urbano.",
     ],
+    youtubeLabel: "Ir al canal de YouTube de Tritubot",
     goHomeLabel: "Ir al inicio",
     mainNavLabel: "Navegacion principal",
   },
@@ -217,6 +218,7 @@ const copy = {
       "Tripartite cooperation framework with the Environment Secretariat of DMQ and Quito's Metropolitan Public Passenger Transportation Company.",
       "Deployment of Tritubot equipment in high-traffic stations to strengthen urban recovery and recycling.",
     ],
+    youtubeLabel: "Go to Tritubot YouTube channel",
     goHomeLabel: "Go to home",
     mainNavLabel: "Main navigation",
   },
@@ -267,9 +269,21 @@ export default function Home() {
               EN
             </button>
           </div>
-        <a className="nav-cta" href="mailto:mduran@recycledignity.com">
-          {content.navCta}
-        </a>
+          <a
+            className="nav-youtube"
+            href="https://www.youtube.com/@tritubot1784"
+            target="_blank"
+            rel="noreferrer"
+            aria-label={content.youtubeLabel}
+            title="YouTube"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z" />
+            </svg>
+          </a>
+          <a className="nav-cta" href="mailto:mduran@recycledignity.com">
+            {content.navCta}
+          </a>
         </div>
       </header>
 
